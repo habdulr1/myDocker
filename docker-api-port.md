@@ -22,3 +22,7 @@ Docker best practise to [Control and configure Docker with systemd](https://docs
 4. Restart docker:
 
         systemctl restart docker.service
+   
+5. To check whether the changes were successfully applied or that docker is listening on the configured port, use the following command.
+
+        sudo netstat -lntp | grep dockerd
